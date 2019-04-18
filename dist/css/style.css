@@ -1,0 +1,381 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  background-size: cover;
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.strong {
+  font-family: "Ubuntu Bold";
+  font-weight: normal;
+  font-style: normal;
+}
+
+.stronger {
+  font-family: "Ubuntu Bold";
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.light {
+  font-family: "Ubuntu Light";
+  font-weight: normal;
+  font-style: normal;
+}
+
+.regular,
+header .head-btn li a,
+.leftcol .menu li a,
+.rightcol .wrap-title .title,
+.rightcol .wrap-title .calendar {
+  font-family: "Ubuntu Regular";
+  font-weight: normal;
+  font-style: normal;
+}
+
+.regular-fz-18 {
+  font: normal normal 18px "Ubuntu Regular";
+  text-align: center;
+  color: #999;
+}
+
+/**fonts**/
+
+@font-face {
+  font-family: 'Ubuntu Regular';
+  src: url("../dist/fonts//Ubuntu-Regular.eot");
+  src: url("../dist/fonts/Ubuntu-Regular.eot?#iefix") format("embedded-opentype"), url("../dist/fonts/Ubuntu-Regular.woff") format("woff"), url("../dist/fonts/Ubuntu-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '../fonts/Ubuntu Light';
+  src: url("../dist/fonts/Ubuntu-Light.eot");
+  src: url("../dist/fonts/Ubuntu-Light.eot?#iefix") format("embedded-opentype"), url("../dist/fonts/Ubuntu-Light.woff") format("woff"), url("../dist/fonts/Ubuntu-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu Bold';
+  src: url("../dist/fonts/Ubuntu-Bold.eot");
+  src: url("../dist/fonts/Ubuntu-Bold.eot?#iefix") format("embedded-opentype"), url("../dist/fonts/Ubuntu-Bold.woff") format("woff"), url("../dist/fonts/Ubuntu-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+header {
+  z-index: 1;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: absolute;
+  height: 80px;
+  width: 100%;
+  line-height: 80px;
+}
+
+header .logo {
+  position: relative;
+  left: 63px;
+  height: 24px;
+  width: 124px;
+}
+
+header .head-btn {
+  position: relative;
+  right: 0px;
+}
+
+header .head-btn li {
+  line-height: 80px;
+  text-align: center;
+  width: 32px;
+  padding-left: 13px;
+}
+
+header .head-btn li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+header .head-btn li:last-child {
+  width: 226px;
+  padding-left: 0;
+}
+
+header .head-btn li:last-child a:hover {
+  text-decoration: underline;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.leftcol {
+  background: linear-gradient(#44a9d2, #2a63cc);
+  position: relative;
+  width: 250px;
+  height: 1958px;
+}
+
+.leftcol .menu {
+  padding-left: 15px;
+  padding-top: 125px;
+}
+
+.leftcol .menu li {
+  border-radius: 10px;
+  padding: 3px 15px;
+  line-height: 50px;
+  width: 220px;
+  height: 50px;
+  display: inline-block;
+}
+
+.leftcol .menu li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.leftcol .menu li img {
+  padding: 0 20px;
+}
+
+.leftcol .menu li:hover {
+  background: #4eabd4;
+}
+
+.leftcol .menu li:hover a {
+  color: white;
+}
+
+.rightcol {
+  padding: 0 25px 0 35px;
+  background: #f2f4fc;
+  width: calc(100% - 250px);
+  height: 1796px;
+  margin-top: 80px;
+}
+
+.rightcol .wrap-title {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.rightcol .wrap-title .title {
+  padding-left: 20px;
+  color: #3F3F3F;
+  line-height: 90px;
+  font-size: 24px;
+}
+
+.rightcol .wrap-title i {
+  margin-right: 11px;
+  display: inline-block;
+  margin-top: 30px;
+  font-size: 12px;
+  padding-left: 12px;
+  border: 1px solid #c0c3c6;
+  border-radius: 2px;
+  width: 110px;
+  height: 35px;
+  line-height: 35px;
+  color: #c0c3c6;
+}
+
+.rightcol .wrap-title i:hover {
+  text-decoration: underline;
+}
+
+.rightcol .wrap-title .calendar {
+  color: #313b47;
+  padding-left: 18px;
+}
+
+.windows {
+  padding-bottom: 24px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.box-1 {
+  margin-left: 25px;
+  padding-top: 25px;
+  padding-left: 45px;
+  width: 265px;
+  height: 190px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.box-1:first-child {
+  margin-left: 0;
+}
+
+.box-1 p {
+  color: #0F1F30;
+  padding: 22px 0;
+  font-size: 24px;
+}
+
+.box-1 h5 {
+  color: #323C47;
+  font-size: 16px;
+}
+
+.box-3 {
+  background: #fff;
+  border-radius: 10px;
+  width: 734px;
+  height: 340px;
+}
+
+.box-4 {
+  margin-left: 25px;
+  background: #fff;
+  border-radius: 10px;
+  width: 370px;
+  height: 340px;
+}
